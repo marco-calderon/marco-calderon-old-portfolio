@@ -85,7 +85,7 @@
             <p>The scope of this app was to develop the application for iOS devices only, but it fully supports Android and web, and can be found in the link above or by clicking here.</p>
             <p>The CSS was not provided for this application, so styles should be created conformly the design. The library used for showing charts is Chart.js as it is very straightforward to use and allows configuration of the data and colors that are displayed on it. The donut chart used here shows sample data that could be easily obtained from an external service - the application is structured for requesting data so it would be simple to attach an external REST API for this to save the data to the cloud.</p>
             <p>It implements the Sandbox pattern, in which the application uses a shared service across the components that obtain data independently of the location of it - could be retrieved locally from the device or obtained from a service. This is the main purpose of this pattern, because the back end was not provided in this case but it can be plugged in without too much hussle.</p>
-            <pre class="mb-4">
+            <pre class="lang-typescript mb-4">
               <code>
   @Component({
     selector: 'app-analytics',

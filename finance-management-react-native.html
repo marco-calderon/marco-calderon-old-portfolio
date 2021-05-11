@@ -81,7 +81,7 @@
           <p>It doesn’t include a backend communication, but as the other projects I’ve made, it is structured to have a service that handle the data itself and could be adapted to include different datasources such as external services. It was developed in TypeScript instead of JavaScript to have the benefits of using a typed superset of the language and avoid runtime issues that could led to unexpected bugs.</p>
           <p>One of the main goals of this app was to develop an application that is on React Native platform using the least libraries possible. This was due to the possibility to include breaking changes or have divided code for different platforms. While this happened with the charts library (Victory Charts) for developing for the web and for the devices, I was aware of the problems to include external libraries that are not well supported on different platforms or have caveats themselves.</p>
           <p>The styling and drivers such as the storage were bare React Native and Expo solutions for example. Although, they offer enough functionality to have it behave like a normal native application with some tradeoffs such as not having a translucent status bar and toolbar on iOS. For this application these obstacles were avoided using other solutions that also made this application available for the web. You can see a live demo of this app here.</p>
-          <pre class="mb-2">
+          <pre class="lang-typescript mb-2">
             <code>
   export interface RoundedButtonProps {
     color: string;
