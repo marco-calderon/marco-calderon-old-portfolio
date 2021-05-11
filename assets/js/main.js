@@ -286,4 +286,8 @@
     aos_init();
   });
 
+  on('click', '.print-btn', () => {
+    select('.print-area')
+  });
+
 })();
