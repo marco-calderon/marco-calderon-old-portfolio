@@ -363,7 +363,6 @@ section {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
@@ -372,10 +371,17 @@ section {
   transition: 0.3s;
 }
 
+.navbar-mobile li {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
+  padding: 16px 20px;
+  font-size: 18px;
   color: #012970;
+  text-transform: uppercase;
+
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
