@@ -26,7 +26,10 @@
     if (all) {
       select(el, all).forEach(e => e.addEventListener(type, listener))
     } else {
-      select(el, all).addEventListener(type, listener)
+      const selected = select(el, all);
+      if (selected) {
+        selected.addEventListener(type, listener);
+      }
     }
   }
 
@@ -287,7 +290,7 @@
   });
 
   on('click', '.print-btn', () => {
-    select('.print-area')
+    window.print();
   });
 
 })();

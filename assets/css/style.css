@@ -2417,3 +2417,13 @@ a i {
     margin-top: 32px;
   }
 }
+
+@media print {
+  .no-print {
+      display: none;
+   }
+
+  .print-area {
+    display: block;
+  }
+}
